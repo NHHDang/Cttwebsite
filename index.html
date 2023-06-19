@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTTBK • MainPage</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="mainindex.js"></script>
+</body>
+</head>
+<body onload="init()">
+    <div class="sidebar col20">
+        <div class="account"> 
+            <header class="mainheader">
+                <img src="20204639.jpg" class="portraitsrc"/>
+                <div id="name1">ngô hoàng hải đăng</div>
+            </header>
+            <ul>
+                <li><a href="#">Thư báo</a></li>
+                <li><a href="#">Đổi mật khẩu</a></li>
+                <li><a href="#">Cấp lại mật khẩu Email trường</a></li>
+                <li><a href="#">Thoát đăng nhập</a></li>
+                <li><a href="#">Thông tin mật khẩu Email cấp mới</a></li>
+                <li><a href="#">Xác nhận khai báo y tế</a></li>
+            </ul>
+        </div>
+        <div class="manage">
+            <header class="mainheader">quản lý hồ sơ sinh viên</header>
+            <ul>
+                <li><a href="#">Thông tin sinh viên</a></li>
+                <li><a href="#">Cập nhật thông tin cá nhân</a></li>
+                <li><a href="#">Thông tin lớp sinh viên</a></li>
+            </ul>
+        </div>
+        <div class="edu">
+            <header class="mainheader">đào tạo</header>
+            <ul>
+                <li><a href="#">Chương trình đào tạo</a></li>
+                <li><a href="#">Kế hoạch học tập</a></li>
+                <li><a href="#">Kết quả học tập</a></li>
+                <li><a href="#">Đồ án tốt nghiệp</a></li>
+                <li><a href="#">Thời khóa biểu tạm thời</a></li>
+            </ul>
+        </div>
+        <div class="help">
+            <header class="mainheader">tư vấn trực tuyến</header>
+            <ul>
+                <li><a href="#">Hỏi đáp - Tư vấn trực tuyến</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="info col80">
+        <header class="mainheader">thông tin cá nhân</header>
+        <div class="infostudent">
+            <header>thông tin sinh viên <button class="btn" onclick="openEditPage()"><i class="fa fa-edit"></i></button></header>
+            <hr/>
+            <div class="infodetails">
+                <div class="col20">
+                    <img src="20204639.jpg" class="portraitsrc"/>
+                    <div id="idstudent1"><i>MSSV: </i><span id="idstudent">20204639</span></div>
+                </div>
+                <div class="col60">
+                    <div><i>Họ và tên: </i><span id="name">Ngô Hoàng Hải Đăng</span></div>
+                    <div><i>Năm vào trường: </i><span id="yearstart">2020</span></div>
+                    <div><i>Bậc đào tạo: </i><span id="edulevel">Đại học đại trà</span></div>
+                    <div><i>Chương trình: </i><span id="spec">Khoa học máy tính 2020</span></div>
+                    <div><i>Khoa viện quản lý: </i><span id="department">Trường Công nghệ Thông tin và Truyền thông</span></div>
+                    <div><i>Tình trạng học tập: </i><span id="stat">Học</span></div>
+                </div>
+                <div class="col40">
+                    <div><i>Giới tính: </i><span id="gender">Nam</span></div>
+                    <div><i>Lớp: </i><span id="class">Khoa học máy tính 03</span></div>
+                    <div><i>Khóa học: </i><span id="session">65</span></div>
+                    <div><i>Email: </i><span id="email">dang.nhh204639@sis.hust.edu.vn</span></div>
+                </div>
+            </div> 
+        </div>
+        <div class="studyinfo">
+            <header>thông tin học tập</header>
+            <hr/>
+            <div class="infodetails">
+                <div>
+                    <div><i>Tổng kết học kỳ: </i>20212</div>
+                    <div><i>Trung bình tích lũy: </i>3.0</div>
+                    <div><i>Số tín chỉ nợ đăng ký: </i>0</div>
+                </div>
+                <div>
+                    <div><i>Số tín chỉ tích lũy: </i>82</div>
+                    <div><i>Trình độ sinh viên: </i>2</div>
+                    <div><i>Mức cảnh cáo: </i>M0</div>
+                </div>
+            </div>
+        </div>
+        <div class="personalinfo">
+            <header>thông tin cá nhân</header>
+            <hr/>
+            <div class="infodetails">
+                <div>
+                    <div><i>Dân tộc: </i>Kinh</div>
+                    <div><i>Năm TN cấp 3: </i>2020</div>
+                    <div><i>Địa chỉ: </i>XÃ HẢI BỐI, HUYỆN ĐÔNG ANH, THÀNH PHỐ HÀ NỘI</div>
+                    <div><i>Số CMTND: </i>017***77</div>
+                    <div><i>Nơi cấp: </i> HÀ NỘI</div>
+                    <div><i>Họ tên bố: </i>NGÔ TIẾN LĂMG</div>
+                    <div><i>Năm sinh: </i>1970</div>
+                    <div><i>Nghề nghiệp: </i>BỘ ĐỘI</div>
+                    <div><i>Điện thoại: </i>097***67</div>
+                    <div><i>Email: </i>HO*@*IL.COM</div>
+                </div>
+                <div>
+                    <div><i>Tôn giáo: </i>KHÔNG</div>
+                    <div><i>Trường THPT: </i>THPT CHUYÊN ĐẠI HỌC SƯ PHẠM HÀ NỘI</div>
+                    <div><i>Hộ khẩu: </i>PHƯỜNG XUÂN LA, QUẬN TÂY HỒ, THÀNH PHỐ HÀ NỘI</div>
+                    <div><i>Số Điện thoại: </i>032***63</div>
+                    <div><i>Họ tên mẹ: </i>HOÀNG THỊ HUYỀN</div>
+                    <div><i>Năm sinh: </i>1977</div>
+                    <div><i>Nghề nghiệp: </i>BỘ ĐỘI</div>
+                    <div><i>Điện thoại: </i>097***76</div>
+                    <div><i>Email: </i>HO*@*IL.COM</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>

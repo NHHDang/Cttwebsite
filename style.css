@@ -1,0 +1,141 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    display: flex;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+}
+
+header {
+    font-size: 14px;
+    font-weight: bold;
+    color: #8c1515;
+    text-transform: uppercase;
+    
+}
+/* Style for the sidebar */
+header.mainheader {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 8px;
+}
+
+header.mainheader>div {
+    line-height: 30px;
+}
+
+div.sidebar header>img {
+    margin-right: 8px;
+}
+
+div.sidebar>div {
+    width: 285px;
+    background-color: #f2f1eb;
+    margin-top: 10px;
+}
+
+div.account>header>img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+ul {
+    margin-top: 10px;
+    padding: 0;
+    padding-bottom: 15px;
+    list-style-type: none;
+}
+
+li {
+    border-bottom: 1px solid #ccc;
+}
+
+a {
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+    color: #2980b9;
+    padding: 10px 16px;
+}
+
+a:hover {
+    background-color: #ebebeb;
+    color: #9e100e;
+}
+
+.col20 {
+    width: 20%;
+}
+
+.col40 {
+    width: 40%;
+}
+
+.col60 {
+    width: 60%;
+}
+
+.col80 {
+    width: 80%;
+}
+/* Style for the information field */
+div.info header {
+    padding-left: 10px;
+}
+
+div.info>div>header {
+    margin-top: 20px;
+}
+
+button.btn {
+    border: none;
+    padding: 0px;
+    margin-left: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+hr {
+    line-height: 4px;
+    border: 3px solid #FF9900;
+    display: inline-block;
+    width: 80%;   
+}
+
+div.infodetails {
+    display: flex;
+    font-size: 15px;
+}
+
+div.infodetails>div {
+    padding: 5px;
+}
+
+div.infodetails>div>div {
+    font-size: 17px;
+    font-weight: bold;
+    margin: 8px;
+}
+
+div.infodetails>div>div>i{
+    font-weight: lighter;
+}
+
+.studyinfo>.infodetails>div, .personalinfo>.infodetails>div {
+    width: 50%;
+}
+
+.infostudent>div.infodetails>div:first-child {
+    text-align: center;
+}
+
+div.infostudent>div>div>img {
+    width: 90%;
+    box-shadow: 8px 6px 8px grey;
+}

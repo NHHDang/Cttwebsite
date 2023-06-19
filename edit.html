@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Page</title>
+    <link rel="stylesheet" href="styleedit.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="import" href="index.html"/>
+    <script src="mainedit.js"></script>
+</head>
+<body onload="init()">
+    <div class="infostudent">
+        <div id="header">
+            <header>chỉnh sửa thông tin</header>
+            <div style="width: 150px;"></div>
+            <div class="buttonfield">
+                <input type="submit" id="okbutton" onclick="updateInfo()" value="OK"/>
+                <input type="button" id="cancelbutton" onclick="window.history.back()" value="Cancel"/>
+                <input type="button" id="resetbutton" onclick="resetInfo()" value="Reset"/>
+            </div>
+        </div>
+        <hr/>
+        <div class="infodetails">
+            <div class="col20">
+                <img id="myimg" src="20204639.jpg"/>
+                <div style="text-align: left; font-weight: bold;">Chọn ảnh:</div>
+                <input type="file" id="imgchooser" onchange="handleimg()"/>
+            </div>
+            <form action="index.html" method="get" class="col80">
+                <div class="infofield">
+                    <div class="col50">
+                        <div><strong>Họ và tên: </strong><input id='name' type='text' placeholder="Ngô Hoàng Hải Đăng"/></div>
+                        <div><strong>MSSV: </strong><input id='idstudent' type='number' min="1" placeholder="20204639"/></div>
+                        <div><strong>Năm vào trường: </strong><input id='yearstart' type='number' min="1900" placeholder="2020"/></div>
+                        <div><strong>Bậc đào tạo: </strong>
+                            <select id="edulevel">
+                                <option>Đại học đại trà</option>
+                                <option>SIE</option>
+                                <option>Cao Đẳng</option>
+                            </select>
+                        </div>
+                        <div><strong>Chương trình: </strong><input id='spec' type='text' placeholder="Khoa học máy tính 2020"/></div>
+                        <div><strong>Khoa viện quản lý: </strong>
+                            <select id="department">
+                                <option>Trường Công nghệ Thông tin và Truyền thông</option>
+                                <option>Trường Điện - Điện tử</option>
+                                <option>Trường Cơ khí</option>
+                            </select>
+                        </div>
+                        <div><strong>Tình trạng học tập: </strong>
+                            <select id="stat">
+                                <option>Học</option>
+                                <option>Đã thôi học</option>
+                                <option>Tốt nghiệp</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col50">
+                        <div><strong>Giới tính: </strong>
+                            <input name="gender" type="radio" value="Nam"/>Nam
+                            <input name="gender" type="radio" value="Nữ"/>Nữ
+                        </div>
+                        <div><strong>Lớp: </strong><input id="class" type="text" placeholder='Khoa học máy tính 03'/></div>
+                        <div><strong>Khóa học: </strong><input  id="session" type='number' min="1" placeholder='65'/></div>
+                        <div><strong>Email: </strong><input id="email" type='email' placeholder="dang.nhh204639@sis.hust.edu.vn"/></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
